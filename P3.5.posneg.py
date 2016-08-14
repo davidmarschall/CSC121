@@ -1,5 +1,8 @@
+# This program counts the number of user-supplied positive and negative integers
+# terminate and empty_string to terminate program
 terminate = False
 empty_str = ''
+# init
 pos_count = 0
 neg_count = 0
 
@@ -11,6 +14,7 @@ while not terminate:
         print('You have entered', neg_count, 'negative integers.')
         terminate = True
 
+    # I'm sure I'll learn a better way to eliminate non-integers
     elif float(user_num) % 1 != 0 or int(user_num) == 0:
         print('INVALID INPUT')
 
