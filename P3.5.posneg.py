@@ -6,10 +6,12 @@ empty_str = ''
 pos_count = 0
 neg_count = 0
 
+print()
 while not terminate:
     user_num = input('Enter any integer, positive or negative, except zero: ')
 
     if user_num == empty_str:
+        print()
         print('You have entered', pos_count, 'positive integers.')
         print('You have entered', neg_count, 'negative integers.')
         terminate = True
@@ -24,4 +26,6 @@ while not terminate:
     else:
         neg_count = neg_count + 1
 
+print()
 print('Bye')
+print()
